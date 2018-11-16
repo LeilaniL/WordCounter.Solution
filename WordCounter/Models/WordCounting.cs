@@ -8,19 +8,18 @@ namespace WordCounter
     //   Class Definition
       public string QueryWord;
       public string InputSentence;
-      public List<string> InputSentenceList = new List<string>{};
-   
+
     // Constructor
-      public WordCounting(string queryWord, string inputSentence, List<string> inputSentenceList)
+      public WordCounting(string queryWord, string inputSentence)
       {
           QueryWord = queryWord;
           InputSentence = inputSentence;
-          InputSentenceList = inputSentenceList;
 
       }
-      public bool objectExists(string testString)
+      public void createSentenceArray()
       {
-        return true;
+        string[] sentenceArray = InputSentence.Split(' ');
+        Console.WriteLine(sentenceArray);
       }
   }
 }

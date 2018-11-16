@@ -10,9 +10,9 @@ namespace WordCounter.Tests
     [TestMethod]
     public void WordCount_WordCountConstructsObject_WordCount()
     {
-       List<string> testList = new List<string> {"example", "list"};
-        WordCounting testWordCount = new WordCounting("testQueryWord", "this is a test sentence", testList);
-        Assert.AreEqual(true, testWordCount.objectExists("example"));
+        WordCounting testWordCount = new WordCounting("testQueryWord", "this is a test sentence");
+        string[] testSentenceArray = {"this","is","a","test","sentence"};
+        Assert.AreEqual(testSentenceArray, testWordCount.createSentenceArray(testWordCount));
 
     }
   }
