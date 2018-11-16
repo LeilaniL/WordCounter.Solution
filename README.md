@@ -10,6 +10,10 @@ This program asks users for a sentence, and a word they want to find in that sen
 * User inputs both a sentence, and a word that they want to count in the sentence.
 _Example: Input "the" and "The cat walks down the street."_
 
+* Program finds whether that word is in the sentence. It returns full and exact matches only (disregarding case).
+_Example: Input "the" and "The cat walks down the street with them."_
+_Expected output: true_
+
 * Program counts how many times that word appears in the sentence. It returns full and exact matches only (disregarding case).
 _Example: Input "the" and "The cat walks down the street with them."_
 _Expected output: 2_
