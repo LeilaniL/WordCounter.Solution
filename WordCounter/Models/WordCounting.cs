@@ -16,10 +16,11 @@ namespace WordCounter
           InputSentence = inputSentence;
 
       }
-      public void createSentenceArray()
+      public string[] createSentenceArray(string userInput)
       {
         string[] sentenceArray = InputSentence.Split(' ');
-        Console.WriteLine(sentenceArray);
+        // Console.WriteLine(sentenceArray);
+        return sentenceArray;
       }
   }
 }

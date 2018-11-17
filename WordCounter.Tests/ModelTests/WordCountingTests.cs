@@ -12,7 +12,7 @@ namespace WordCounter.Tests
     {
         WordCounting testWordCount = new WordCounting("testQueryWord", "this is a test sentence");
         string[] testSentenceArray = {"this","is","a","test","sentence"};
-        Assert.AreEqual(testSentenceArray, testWordCount.createSentenceArray(testWordCount));
+        CollectionAssert.AreEqual(testSentenceArray, testWordCount.createSentenceArray(testWordCount.InputSentence));
 
     }
   }
