@@ -36,5 +36,20 @@ namespace WordCounter
             }
             return false; 
         }
+         public int matchCounter(string userQueryWord, string[] sentenceArray)
+        {int matchCount = 0;
+            if ((sentenceArray != null) & (sentenceArray.Length > 0))
+            {
+                foreach (string word in sentenceArray)
+                {
+                    if (word == userQueryWord)
+                    {
+                        matchCount += 1;
+                    }
+                }
+                return matchCount;
+            }
+            return 0; 
+        }
     }
 }

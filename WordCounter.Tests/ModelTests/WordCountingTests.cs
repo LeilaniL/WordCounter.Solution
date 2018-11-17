@@ -20,5 +20,11 @@ namespace WordCounter.Tests
         WordCounting testWordCount = new WordCounting("love", "I love C Sharp");
         Assert.AreEqual(true, testWordCount.matchExists("love", new string[]{"I","love","C","Sharp"}));
     }
+    [TestMethod]
+    public void WordCounting_CountsWordMatches_Int()
+    {
+        WordCounting testWordCount = new WordCounting("love", "I love love C Sharp");
+        Assert.AreEqual(2, testWordCount.matchCounter("love", new string[]{"I","love","love","C","Sharp"}));
+    }
   }
 }
