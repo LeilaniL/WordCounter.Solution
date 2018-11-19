@@ -36,7 +36,14 @@ namespace WordCounter
                         matchCount += 1;
                     }
                 }
-                return matchCount;
+                if(matchCount==0)
+                {
+                  Console.WriteLine("No Matches Found");
+                  return;
+                } else
+                {
+                  return matchCount;
+                }
             }
             return 0;
         }
