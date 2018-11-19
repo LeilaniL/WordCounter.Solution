@@ -22,28 +22,16 @@ namespace WordCounter
             // Console.WriteLine(sentenceArray);
             return sentenceArray;
         }
-        public bool matchExists(string userQueryWord, string[] sentenceArray)
-        {
-            if ((sentenceArray != null) & (sentenceArray.Length > 0))
-            {
-                foreach (string word in sentenceArray)
-                {
-                    if (word == userQueryWord)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
+
         public int matchCounter(string userQueryWord, string[] sentenceArray)
         {
+            string lowerCaseUserQuery = userQueryWord.ToLower();
             int matchCount = 0;
             if ((sentenceArray != null) & (sentenceArray.Length > 0))
             {
                 foreach (string word in sentenceArray)
-                {
-                    if (word == userQueryWord)
+                {string lowerCaseWord = word.ToLower();
+                  if (lowerCaseWord == lowerCaseUserQuery)
                     {
                         matchCount += 1;
                     }
