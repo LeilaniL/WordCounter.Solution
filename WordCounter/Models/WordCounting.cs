@@ -39,7 +39,6 @@ namespace WordCounter
                 if(matchCount==0)
                 {
                   Console.WriteLine("No Matches Found");
-                  return;
                 } else
                 {
                   return matchCount;
