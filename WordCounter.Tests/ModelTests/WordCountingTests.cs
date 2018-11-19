@@ -14,17 +14,24 @@ namespace WordCounter.Tests
         string[] testSentenceArray = {"this","is","a","test","sentence"};
         CollectionAssert.AreEqual(testSentenceArray, testWordCount.createSentenceArray(testWordCount.InputSentence));
     }
-    [TestMethod]
-    public void WordCounting_FindsMatchingWord_True()
-    {
-        WordCounting testWordCount = new WordCounting("love", "I love C Sharp");
-        Assert.AreEqual(true, testWordCount.matchExists("love", new string[]{"I","love","C","Sharp"}));
-    }
+
     [TestMethod]
     public void WordCounting_CountsWordMatches_Int()
     {
         WordCounting testWordCount = new WordCounting("love", "I love love C Sharp");
         Assert.AreEqual(2, testWordCount.matchCounter("love", new string[]{"I","love","love","C","Sharp"}));
+    }
+    [TestMethod]
+    public void WordCounting_IgnoresCase_Int()
+    {
+        WordCounting testWordCount = new WordCounting("love", "I love love LOVE C Sharp");
+        Assert.AreEqual(3, testWordCount.matchCounter("love", new string[]{"I","love","love","LOVE","C","Sharp"}));
+    }
+    [TestMethod]
+    public void WordCounting_SaysNoMatches_String()
+    {
+        WordCounting testWordCount = new WordCounting("hate", "I love love LOVE C Sharp");
+        Assert.AreEqual("No Matches Found", testWordCount.matchCounter("hate", new string[]{"I","love","love","LOVE","C","Sharp"}));
     }
   }
 }
