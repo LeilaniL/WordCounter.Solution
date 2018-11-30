@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\leila\\desktop\\code-projects\\WordCounter.Solution\\WordCounter\\WordCounter.csproj",
+  "ProjectFilePath": "c:\\Users\\leila\\desktop\\code-projects\\wordcounter.solution\\WordCounter\\WordCounter.csproj",
   "TargetFramework": "netcoreapp1.1",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
-    "Extensions": [
-      {
-        "ExtensionName": "UnsupportedRazorExtension"
-      }
-    ]
-  }
+  "Configuration": null
 }

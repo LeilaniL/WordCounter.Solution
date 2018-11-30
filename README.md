@@ -6,10 +6,13 @@ This program asks users for a sentence, and a word they want to find in that sen
 
 ## Setup Instructions
 * Clone or download this repo
-* Install .NET (instructions here https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c-and-net)
+* Install .NET Core 2.1.3 SDK, .NET Core Runtime 2.0.9 and Mono 5.0.1.1 (instructions here https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c-and-net)
 * Open the console and navigate to WordCounter.Solution/WordCounter
-* In the console, enter _mono Models/WordCounting.exe_ to run the program
+* In the console, enter _dotnet restore_ and then _mcs Models/WordCounter.cs_
+* Enter _mono Models/WordCounting.exe_ to run the program
 * Follow the prompts to enter a sentence and search word
+* To run the tests, navigate to WordCounter.Solution/WordCounter.Tests
+* Then, in the console, enter _dotnet restore_ and then _dotnet test_
 
 ## Specs
 * User inputs both a sentence, and a word that they want to count in the sentence.

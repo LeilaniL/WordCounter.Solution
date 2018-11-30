@@ -31,7 +31,7 @@ namespace WordCounter.Tests
     public void WordCounting_SaysNoMatches_String()
     {
         WordCounting testWordCount = new WordCounting("hate", "I love love LOVE C Sharp");
-        Assert.AreEqual("No Matches Found", testWordCount.matchCounter("hate", new string[]{"I","love","love","LOVE","C","Sharp"}));
+        Assert.AreEqual(0, testWordCount.matchCounter("hate", new string[]{"I","love","love","LOVE","C","Sharp"}));
     }
   }
 }
