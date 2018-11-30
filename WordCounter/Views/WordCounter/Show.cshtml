@@ -3,17 +3,20 @@
     <head>
       <title>Word Counter</title>
       <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+     <link rel='stylesheet' href='~/css/styles.css'>
     </head>
     <body>
       <div class="container">
-        <h1>Count Results</h1>
-        @if(Model!=0)
-        {
-        <p>@Model</p>
-        } else
-        {
-          <p>That word is not in the given text!</p>
-        }
+        <div class="transparent">
+          <h1>Count Results</h1>
+          @if(Model!=0)
+          {
+          <p>Your word appears <b>@Model</b> times in the text.</p>
+          } else
+          {
+            <p>That word is not in the given text!</p>
+          }
+        </div>
       </div>
     </body>
   </html>
