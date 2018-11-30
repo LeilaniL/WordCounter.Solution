@@ -3,11 +3,11 @@
   "TargetFramework": "netcoreapp1.1",
   "TagHelpers": [],
   "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
+    "ConfigurationName": "MVC-1.1",
+    "LanguageVersion": "1.1",
     "Extensions": [
       {
-        "ExtensionName": "UnsupportedRazorExtension"
+        "ExtensionName": "MVC-1.1"
       }
     ]
   }

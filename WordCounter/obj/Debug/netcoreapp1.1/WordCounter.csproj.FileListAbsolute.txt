@@ -18,3 +18,5 @@ C:\Users\leila\desktop\code-projects\wordcounter.solution\WordCounter\obj\Debug\
 C:\Users\leila\desktop\code-projects\wordcounter.solution\wordcounter\obj\Debug\netcoreapp1.1\WordCounter.csprojResolveAssemblyReference.cache
 C:\Users\leila\desktop\code-projects\wordcounter.solution\wordcounter\bin\Debug\netcoreapp1.1\WordCounter.dll
 C:\Users\leila\desktop\code-projects\wordcounter.solution\wordcounter\bin\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\leila\Desktop\code-projects\WordCounter.Solution\wordcounter\bin\Debug\netcoreapp1.1\WordCounter.runtimeconfig.json
+C:\Users\leila\Desktop\code-projects\WordCounter.Solution\wordcounter\bin\Debug\netcoreapp1.1\WordCounter.runtimeconfig.dev.json

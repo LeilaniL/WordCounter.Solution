@@ -49,18 +49,18 @@ namespace CountingWords.Models
             return 0;
         }
     }
-    public class Program
-    {
-        public static void Main()
-        {
-            Console.WriteLine("Please enter a sentence.");
-            string sentence = Console.ReadLine();
-            Console.WriteLine("Please enter the word you'd like to count.");
-            string inputWord = Console.ReadLine();
-            WordCounting userInputStrings = new WordCounting(inputWord, sentence);
-            string[] userSentenceArray = userInputStrings.createSentenceArray(sentence);
-            int result = userInputStrings.matchCounter(inputWord, userSentenceArray);
-            Console.WriteLine(result);
-        }
-    }
+    // public class Program
+    // {
+    //     public static void Main()
+    //     {
+    //         Console.WriteLine("Please enter a sentence.");
+    //         string sentence = Console.ReadLine();
+    //         Console.WriteLine("Please enter the word you'd like to count.");
+    //         string inputWord = Console.ReadLine();
+    //         WordCounting userInputStrings = new WordCounting(inputWord, sentence);
+    //         string[] userSentenceArray = userInputStrings.createSentenceArray(sentence);
+    //         int result = userInputStrings.matchCounter(inputWord, userSentenceArray);
+    //         Console.WriteLine(result);
+    //     }
+    // }
 }
