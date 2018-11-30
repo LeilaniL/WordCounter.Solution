@@ -7,17 +7,20 @@ using CountingWords.Controllers;
 namespace CountingWords.Tests
 {
     [TestClass]
-    public class HomeControllerTest
+    public class HomeControllerTests
     {
 
         [TestMethod]
-        public void Index_HasCorrectModelType_ItemList()
+        public void Index_ReturnsCorrectView_True()
         {
-            ViewResult indexView = new HomeController().Index() as ViewResult;
+            //Arrange
+            HomeController controller = new HomeController();
 
-            var result = indexView.ViewData.Model;
+            //Act
+            ActionResult indexView = controller.Index();
 
-            Assert.IsInstanceOfType(result, typeof(int));
+            //Assert
+            Assert.IsInstanceOfType(indexView, typeof(ViewResult));
         }
     }
 }

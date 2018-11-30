@@ -9554,11 +9554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leila\\Desktop\\code-projects\\WordCounter.Solution\\wordcounter\\WordCounter.csproj",
+      "projectUniqueName": "C:\\Users\\leila\\desktop\\code-projects\\wordcounter.solution\\WordCounter\\WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "C:\\Users\\leila\\Desktop\\code-projects\\WordCounter.Solution\\wordcounter\\WordCounter.csproj",
+      "projectPath": "C:\\Users\\leila\\desktop\\code-projects\\wordcounter.solution\\WordCounter\\WordCounter.csproj",
       "packagesPath": "C:\\Users\\leila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leila\\Desktop\\code-projects\\WordCounter.Solution\\wordcounter\\obj\\",
+      "outputPath": "C:\\Users\\leila\\desktop\\code-projects\\wordcounter.solution\\WordCounter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leila\\AppData\\Roaming\\NuGet\\NuGet.Config"
