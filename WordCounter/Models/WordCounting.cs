@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WordCounter
+namespace CountingWords.Models
 {
     public class WordCounting
     {
@@ -30,18 +30,20 @@ namespace WordCounter
             if ((sentenceArray != null) & (sentenceArray.Length > 0))
             {
                 foreach (string word in sentenceArray)
-                {string lowerCaseWord = word.ToLower();
-                  if (lowerCaseWord == lowerCaseUserQuery)
+                {
+                    string lowerCaseWord = word.ToLower();
+                    if (lowerCaseWord == lowerCaseUserQuery)
                     {
                         matchCount += 1;
                     }
                 }
-                if(matchCount==0)
+                if (matchCount == 0)
                 {
-                  Console.WriteLine("No Matches Found");
-                } else
+                    Console.WriteLine("No Matches Found");
+                }
+                else
                 {
-                  return matchCount;
+                    return matchCount;
                 }
             }
             return 0;
@@ -51,14 +53,14 @@ namespace WordCounter
     {
         public static void Main()
         {
-          Console.WriteLine("Please enter a sentence.");
-          string sentence = Console.ReadLine();
-          Console.WriteLine("Please enter the word you'd like to count.");
-          string inputWord = Console.ReadLine();
-          WordCounting userInputStrings = new WordCounting(inputWord, sentence);
-          string[] userSentenceArray = userInputStrings.createSentenceArray(sentence);
-          int result = userInputStrings.matchCounter(inputWord, userSentenceArray);
-          Console.WriteLine(result);
+            Console.WriteLine("Please enter a sentence.");
+            string sentence = Console.ReadLine();
+            Console.WriteLine("Please enter the word you'd like to count.");
+            string inputWord = Console.ReadLine();
+            WordCounting userInputStrings = new WordCounting(inputWord, sentence);
+            string[] userSentenceArray = userInputStrings.createSentenceArray(sentence);
+            int result = userInputStrings.matchCounter(inputWord, userSentenceArray);
+            Console.WriteLine(result);
         }
     }
 }
