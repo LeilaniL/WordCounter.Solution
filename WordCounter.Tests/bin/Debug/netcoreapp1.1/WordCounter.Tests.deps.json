@@ -10,7 +10,8 @@
         "dependencies": {
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
-          "Microsoft.NET.Test.Sdk": "15.0.0"
+          "Microsoft.NET.Test.Sdk": "15.0.0",
+          "WordCounter": "1.0.0"
         },
         "runtime": {
           "WordCounter.Tests.dll": {}
@@ -350,6 +351,11 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "wordcounter/1.0.0": {
+        "runtime": {
+          "WordCounter.dll": {}
+        }
       }
     }
   },
@@ -397,21 +403,21 @@
     "newtonsoft.json/9.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M3gbSHSywGehguv1OvABzvVCiKOFsfEn0xAh43bqCb3tj2HdTTWsvf5qFGb6hE4LtJUwq4mL22DmlDIjiQ6Z6w==",
+      "sha512": "sha512-qIzdBhDsy7B8BRRUwXr9An1XlvNuUykDoSyJL53ANAphRR6JSERwPu7nncEaxJkIfsPb7sXZE5FgWoLu7efiSA==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
     },
     "system.collections.nongeneric/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3azUrUJ4d8HlabKnm0EzkXhWMaFp4qMgfmWUR8gb7ozoPa6cP/Gyq+EbFiFY9xwErIo/CX6pfDCSzXX6Vctmew==",
+      "sha512": "sha512-lFdogUABuXZV5tDZRDSiJq5rnOmDpeeJn7CxYn7dqNPprvAUArhalSHzaUmIrRytlbNMOdNKeF+LsiHy0xIyZw==",
       "path": "system.collections.nongeneric/4.0.1",
       "hashPath": "system.collections.nongeneric.4.0.1.nupkg.sha512"
     },
     "system.collections.specialized/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mg50m8AGn2/OrfwkHOsU7BFF/5JRQlg23V1a97QzwjFk/yC2s/ACIzoLzOAmAAfCO3hKdQi2mxFJsZu4ysZsTA==",
+      "sha512": "sha512-nQy2yI8Ou3C++8CJMlEdbmewc2u0fvBBx61D+xhMRwMMAWkycp8FrKtYPftsRt2Oi7ipRUe0A+vg4nePQ2JJ2A==",
       "path": "system.collections.specialized/4.0.1",
       "hashPath": "system.collections.specialized.4.0.1.nupkg.sha512"
     },
@@ -425,14 +431,14 @@
     "system.componentmodel.primitives/4.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+wGv6vYd4NZErkrEdK5PD62+hSIrrWs39KuW/bg6qchC1Fu6LyD0G4ut5rb4zcYQU+z2V+PsYEK3aZNky8ZhsA==",
+      "sha512": "sha512-ZhZjQmjiBcZovliLAEdK9uDXdmQtVnu/oCJ4UEY5ygCbOEMqaBHJEGSEvm6Ofo5+yU0iRjVLgAGmmtbHz07n7w==",
       "path": "system.componentmodel.primitives/4.1.0",
       "hashPath": "system.componentmodel.primitives.4.1.0.nupkg.sha512"
     },
     "system.componentmodel.typeconverter/4.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rV+OoTz0I1GarLyX+DKtyGpcL9mEVzTqKhvUpaGrYcXLPvjpMAMhJ6cpBNcd2obnPD82K8cTXfHPLSluQtrjbQ==",
+      "sha512": "sha512-lBva+/kArkpgazAZHj+LDcCcYDWqq8s4Amd17ygloo3oQt4lMFknmCVoT2FDn43UHtz/fvSDuEUfTcZnmrgoQQ==",
       "path": "system.componentmodel.typeconverter/4.1.0",
       "hashPath": "system.componentmodel.typeconverter.4.1.0.nupkg.sha512"
     },
@@ -467,7 +473,7 @@
     "system.runtime.serialization.primitives/4.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tGeRYzIMtl0EAzH7pic6hEbgo0Z8kPeWjxPE8xNR51kGkFHHxCqm6HjTdrkXhbT6/ADfZgA4dscScsEJiJOViQ==",
+      "sha512": "sha512-Ph0MjJKLingsxyd4723BMcpoWV3syFwQYxKLiCDYjv6yhehrCl3WtyjL+6lhgiy5ZO8HqWxdQo8QN78c9qD1Dg==",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
     },
@@ -484,6 +490,11 @@
       "sha512": "sha512-gQQaCNO5FYxD37SNQvE+yZUNfCt/Y+FgCnead3hu37RsUiwy2cxqRDWPv+Ee+6DlOeV47xaSYYZ6GQW4EhoEXQ==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "wordcounter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
