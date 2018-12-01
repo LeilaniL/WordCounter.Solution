@@ -19,19 +19,19 @@ namespace CountingWords.Tests
         public void WordCounting_CountsWordMatches_Int()
         {
             WordCounting testWordCount = new WordCounting("love", "I love love C Sharp");
-            Assert.AreEqual(2, testWordCount.matchCounter("love", new string[] { "I", "love", "love", "C", "Sharp" }));
+            Assert.AreEqual(2, testWordCount.matchCounter(testWordCount.QueryWord, testWordCount.ArrayFromSentence));
         }
         [TestMethod]
         public void WordCounting_IgnoresCase_Int()
         {
             WordCounting testWordCount = new WordCounting("love", "I love love LOVE C Sharp");
-            Assert.AreEqual(3, testWordCount.matchCounter("love", new string[] { "I", "love", "love", "LOVE", "C", "Sharp" }));
+            Assert.AreEqual(3, testWordCount.matchCounter(testWordCount.QueryWord, testWordCount.ArrayFromSentence));
         }
         [TestMethod]
-        public void WordCounting_SaysNoMatches_String()
+        public void WordCounting_SaysNoMatches_Int()
         {
             WordCounting testWordCount = new WordCounting("hate", "I love love LOVE C Sharp");
-            Assert.AreEqual(0, testWordCount.matchCounter("hate", new string[] { "I", "love", "love", "LOVE", "C", "Sharp" }));
+            Assert.AreEqual(0, testWordCount.matchCounter(testWordCount.QueryWord, testWordCount.ArrayFromSentence));
         }
     }
 }

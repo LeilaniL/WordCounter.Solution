@@ -14,9 +14,7 @@ namespace CountingWords.Controllers
         public ActionResult Create(string word, string sentence)
         {
             WordCounting newCount = new WordCounting(word, sentence);
-            // string[] sentenceArray = newCount.createSentenceArray(sentence);
-            // int result = newCount.matchCounter(word, sentenceArray);
-            return View("Show", newCount.matchCounter(word, newCount.ArrayFromSentence));
+            return View("Show", newCount);
         }
         // [HttpGet("/searchResults")]
         // public ActionResult Show()

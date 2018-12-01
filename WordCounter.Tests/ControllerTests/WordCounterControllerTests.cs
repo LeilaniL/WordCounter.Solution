@@ -11,14 +11,14 @@ namespace CountingWords.Tests
     {
 
         [TestMethod]
-        public void Create_CreatesCorrectModelType_Int()
+        public void Create_CreatesCorrectModelType_WordCounting()
         {
             string countWord = "lots";
             ViewResult createView = new WordCounterController().Create(countWord, "there are lots and lots of cats on the internet") as ViewResult;
 
             var result = createView.ViewData.Model;
 
-            Assert.IsInstanceOfType(result, typeof(int));
+            Assert.IsInstanceOfType(result, typeof(WordCounting));
         }
     }
 }
