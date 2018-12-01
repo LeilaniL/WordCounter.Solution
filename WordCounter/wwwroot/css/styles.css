@@ -3,7 +3,7 @@ body {
     background-image: url("../images/wordCloud.png");
     background-position: center;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
 }
 .transparent {
@@ -30,4 +30,8 @@ a {
 a:hover{
     color: rgb(62, 109, 117);
     text-decoration: none;
+}
+.query {
+    font-weight: bold;
+    color: lime;
 }

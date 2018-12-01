@@ -9,6 +9,18 @@ namespace CountingWords.Tests
     [TestClass]
     public class WordCounterControllerTests
     {
+        [TestMethod]
+        public void Create_ReturnsCorrectView_Show()
+        {
+            //Arrange
+            WordCounterController controller = new WordCounterController();
+
+            //Act
+            ActionResult showView = controller.Create("test", "this is for testing");
+
+            //Assert
+            Assert.IsInstanceOfType(showView, typeof(ViewResult));
+        }
 
         [TestMethod]
         public void Create_CreatesCorrectModelType_WordCounting()

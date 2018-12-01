@@ -11,11 +11,12 @@
           <h1>Count Results</h1>
           @if(Model.matchCounter(Model.QueryWord, Model.ArrayFromSentence)!=0)
           {
-          <p>@Model.QueryWord appears <b>@Model.matchCounter(Model.QueryWord, Model.ArrayFromSentence)</b> times in the text.</p>
+          <p><span class = "query">"@Model.QueryWord"</span> appears <span class = "query">@Model.matchCounter(Model.QueryWord, Model.ArrayFromSentence)</span> times in the text.</p>
           } else
           {
-            <p>@Model.QueryWord is not in the given text!</p>
+            <p><span class = "query">"@Model.QueryWord"</span> is not in the given text!</p>
           }
+          <a href="/new">Count Another</a>
         </div>
       </div>
     </body>

@@ -16,7 +16,5 @@ namespace CountingWords.Controllers
             WordCounting newCount = new WordCounting(word, sentence);
             return View("Show", newCount);
         }
-        // [HttpGet("/searchResults")]
-        // public ActionResult Show()
     }
 }
