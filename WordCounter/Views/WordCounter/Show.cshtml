@@ -9,12 +9,12 @@
       <div class="container">
         <div class="transparent">
           <h1>Count Results</h1>
-          @if(Model!=0)
+          @if(Model.matchCounter(Model.QueryWord, Model.ArrayFromSentence)!=0)
           {
-          <p>Your word appears <b>@Model</b> times in the text.</p>
+          <p>@Model.QueryWord appears <b>@Model.matchCounter(Model.QueryWord, Model.ArrayFromSentence)</b> times in the text.</p>
           } else
           {
-            <p>That word is not in the given text!</p>
+            <p>@Model.QueryWord is not in the given text!</p>
           }
         </div>
       </div>
